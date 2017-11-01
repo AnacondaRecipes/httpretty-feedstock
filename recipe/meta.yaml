@@ -10,8 +10,12 @@ source:
   sha256: 83c176bbac9d68a45a5cca54f2d5be7e6b16a063adf6f334e7fd0eee272e976e
 
 build:
-  number: 0
-  skip: True  # [py3k]
+  number: 1
+  # Let's not skip py3k as other py3 projects are already using it (quandl) and
+  # Debian guys folks also shipping it
+  # https://github.com/gabrielfalcao/HTTPretty/blob/7d03149f919d2c303feeb8a52f55146a39d8ef12/README.rst#L11-L15
+  # https://packages.debian.org/sid/python3-httpretty
+  # skip: True  # [py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
