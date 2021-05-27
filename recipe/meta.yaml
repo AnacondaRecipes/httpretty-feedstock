@@ -17,6 +17,8 @@ requirements:
   host:
     - python >=3
     - pip
+    - setuptools
+    - wheel
   run:
     - python >=3
     - six
@@ -32,12 +34,13 @@ test:
 about:
   home: http://github.com/gabrielfalcao/httpretty
   license: MIT
+  license_family: MIT
   license_file: COPYING
   summary: HTTP client mocking tool for Python
   description: |
     HTTPretty is a HTTP client mock library for Python 100% inspired on
     Ruby's FakeWeb.
-  doc_url: http://httpretty.readthedocs.org/
+  doc_url: https://httpretty.readthedocs.io/en/latest/
   dev_url: https://github.com/gabrielfalcao/httpretty
 
 extra:
